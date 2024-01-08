@@ -3,7 +3,7 @@ import { BiEdit } from "react-icons/bi"
 import { AiFillDelete } from "react-icons/ai"
 import '../App.css'
 
-const Todo = ({ text, updateMode, deleteToDo }) => {
+const Todo = ({ text, updateMode, deleteTodo }) => {
     return (
         <>
             <div className="todo">
@@ -12,7 +12,7 @@ const Todo = ({ text, updateMode, deleteToDo }) => {
                 </div>
                 <div className="icons">
                     <BiEdit className="icon" onClick={updateMode} />
-                    <AiFillDelete className="icon" onClick={deleteToDo} />
+                    <AiFillDelete className="icon" onClick={deleteTodo} />
                 </div>
             </div>
         </>
